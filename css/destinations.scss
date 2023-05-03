@@ -1,0 +1,67 @@
+@use "./global.scss" as *;
+
+.Greece {
+    background-image: url("../assets/Images/greece.jpg");
+}
+.Hawaii {
+    background-image: url("../assets/Images/hawaii.jpg");
+}
+.Iceland {
+    background-image: url("../assets/Images/iceland.jpg");
+}
+.main {
+    position: relative;
+    top: 3.2rem;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    &__heading {
+        font-size: 4rem;
+        font-weight: 900;
+        margin: 0 0 3rem 6rem;
+        color: $white;
+        padding-top: 3rem;
+    }
+    &__Cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 6rem;
+    }
+    .Itinerary__card {
+        border-radius: 0.3125rem;
+        border: 0.0625rem solid rgba($color: #000000, $alpha: 0.2);
+        width: 16rem;
+        height: 24rem;
+        margin: 1rem;
+        padding: 1rem;
+        // box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $white;
+        &__day {
+            text-align: center;
+            font-size: 1rem;
+            border-bottom: .125rem solid black;
+            width: 100%;
+            margin: .4rem 0;
+        }
+        &__list {
+            list-style-type: none;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            &__item {
+                background-color: $cream;
+                text-align: center;
+                padding: 1rem 0;
+                margin: 0 0 1rem 0;
+                width: 100%;
+                font-size: 1rem;
+            }
+        }
+    }
+}

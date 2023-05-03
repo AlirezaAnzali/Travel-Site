@@ -1,0 +1,106 @@
+@use "./global.scss" as *;
+
+.hero {
+  position: relative;
+  top: 3.2rem;
+  width: 100%;
+  background-color: $cream;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__left {
+    width: 50%;
+    margin: 6rem 0 6rem 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    &__heading {
+      font-size: 2.1rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      color: $blue;
+      // padding-bottom: 2.2rem;
+    }
+    &__text {
+      font-size: .85rem;
+      font-weight: 400;
+      color: $blue;
+      padding-bottom: 1.5rem;
+      margin: 0;
+    }
+    .button {
+      background-color: $orange;
+      color: $white;
+      font-size: .85rem;
+      font-weight: 400;
+      padding: 0.5rem 2.5rem;
+      border: none;
+      border-radius: 1.8rem;
+    }
+  }
+  &__right {
+    width: 50%;
+    margin: 6rem 6rem 6rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__image {
+      width: 22rem;
+    }
+  }
+}
+.recommendations {
+  position: relative;
+  background-color: $white;
+  &__heading {
+    padding-top: 3rem;
+    margin: 1rem 6rem;
+    color: $blue;
+    font-size: 1.3rem;
+    font-weight: 800;
+  }
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    &__link {
+      text-decoration: none;
+      margin: 1rem;
+    }
+    &__card {
+      border-radius: 0.3125rem;
+      border: 0.0625rem solid rgba($color: #000000, $alpha: 0.2);
+      width: 16rem;
+      height: 24rem;
+      box-shadow: 0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.2);
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      &:hover {
+        border: 0.01rem solid rgba($color: $blue, $alpha: 1);
+        transform: scale(1.1);
+        opacity: .8;
+      }
+      &--Hawaii {
+        background-image: url(../assets/Images/hawaii.jpg);
+        background-size: cover;
+      }
+      &--Iceland {
+        background-image: url(../assets/Images/iceland.jpg);
+        background-size: cover;
+      }
+      &--Greece {
+        background-image: url(../assets/Images/greece.jpg);
+        background-size: cover;
+      }
+      &__title {
+        color: $white;
+        font-size: 1rem;
+        font-weight: 800;
+        margin: 1rem;
+      }
+    }
+  }
+}
